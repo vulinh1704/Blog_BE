@@ -145,7 +145,7 @@ app.put('/users/update-profile', (req, res) => {
     }
 });
 
-app.put('/users/get-profile', (req, res) => {
+app.get('/users/get-profile', (req, res) => {
     const username = req.user.username;
     const result = authLogic.getInfo(username);
     if (result.success) {

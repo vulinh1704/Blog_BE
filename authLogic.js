@@ -73,7 +73,7 @@ const getInfo = async (username) => {
     const users = readFile();
     const user = users.find(u => u.username === username);
     const { password, dob, image } = user;
-    res.json({ success: true, username, password, dob, image });
+    return { success: true, username, password, dob, image };
 };
 
 module.exports = { register, login, resetPassword, updateUser, getInfo };

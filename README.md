@@ -59,7 +59,7 @@ Request Body:
 
 
 ### Get Profile
-PUT http://localhost:3000/users/get-profile AUTH
+GET http://localhost:3000/users/get-profile AUTH
 
 
 ### Update Profile
