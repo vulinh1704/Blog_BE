@@ -40,9 +40,9 @@ app.post('/register', (req, res) => {
 });
 
 // Đăng nhập
-app.post('/login', (req, res) => {
+app.post('/login', async (req, res) => {
     const { username, password } = req.body;
-    const result = authLogic.login(username, password);
+    const result = await authLogic.login(username, password);
     if (result.success) {
         res.json(result);
     } else {

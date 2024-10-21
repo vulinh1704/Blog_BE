@@ -38,7 +38,7 @@ const login = async (username, password) => {
     }
 
     const token = jwt.sign({ username: user.username }, SECRET_KEY, { expiresIn: "1h" });
-    res.json({ success: true, username, token });
+    return { success: true, username, token };
 };
 const resetPassword = (username) => {
     const users = readFile();
