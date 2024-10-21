@@ -13,7 +13,8 @@ The server listens at port 3000
 {
 username: "john_doe",
 password: "securepassword",
-dob: "1990-01-01"
+dob: "1990-01-01",
+image: "https://firebasestorage.googleapis.com/v0/b/upload-files-d3b42.appspot.com/o/upload-files%2Fimages%2Fblackmyth-1723969364570.jpg?alt=media&token=7d51fe27-e860-44c8-ae9e-b2d86dc31382"
 }
 
 ### Post Model
