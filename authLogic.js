@@ -69,7 +69,7 @@ const updateUser = (username, newData) => {
 };
 
 
-const getInfo = async (username) => {
+const getInfo = (username) => {
     const users = readFile();
     const user = users.find(u => u.username === username);
     const { password, dob, image } = user;
